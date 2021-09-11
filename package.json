@@ -1,0 +1,7 @@
+{
+  "name": "event-calendar",
+  "description": "sistema web de calendário de eventos",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  }
+}
