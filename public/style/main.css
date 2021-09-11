@@ -1,0 +1,35 @@
+:root{
+    --yellow: #FFC947;
+    --darker-yellow: #FFB830;
+    --dark-blue: #0A1931;
+    --light-blue: #185ADB;
+    --grey: #EFEFEF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Roboto, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--title-color);
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--title-color);
+}
+
+body{
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialised;
+}
+
+
+

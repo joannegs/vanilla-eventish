@@ -1,1 +1,35 @@
-<h3>index page</h3>
+{% extends "layout.html" %}
+{% set pageId = "index-page" %}
+{% block styles %}
+    <link rel="stylesheet" href="style/home.css">
+    {% endblock styles %}
+    {% block content %}
+        <div class="content">
+            
+            <header>
+                <span></span>
+                <a href="/sign-up">
+                    <span><span>
+                    No account yet? Sign up!
+                </a>
+            </header>
+
+            <main>
+                <div>
+                    <h1>
+                        eventish
+                    </h1>
+                    <p class="red">
+                        All of your events in one place
+                    </p>
+                </div>
+
+                <div>
+                    <input type="text" name="name" placeholder="E-mail" required> 
+                    <input type="text" name="name" placeholder="Password" required>
+                    <button>Login</button>
+                </div>
+
+                        <p></p>
+                    </main>
+                {% endblock content %}

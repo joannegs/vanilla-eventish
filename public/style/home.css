@@ -1,0 +1,75 @@
+#index-page{
+    background: url('../icons/background-home.svg') no-repeat;
+    height: 100vh;
+    background-position: 50vw bottom;
+    background-size: 800px;
+}
+
+#index-page header{
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}   
+
+#index-page header a{
+    text-decoration: none;
+}
+
+#index-page header a:hover{
+    color: var(--light-blue);
+}
+
+#index-page .content{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+#index-page main{
+    max-width: 560px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh; 
+}
+
+
+#index-page main input{
+    width: 75%; 
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+#index-page main button{
+    width: 75%; 
+    border: none;
+    background: #FFC947;
+    color: #fff;
+    border-radius: 5px;
+    margin: 40px 0;
+    font-size: 15px;
+    padding: 5px;
+    transition: 400ms;
+}
+
+#index-page main button:hover{
+    background: var(--darker-yellow);
+}
+
+#index-page main h1{
+    font-size: 65px;
+}
+
+#index-page main p{
+    font-size: 20px;
+}
+
+
