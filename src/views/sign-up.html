@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% set pageId = "page-sign-up" %}
+
+{% block name %}
+    <title>sign up to eventish</title>
+{% endblock name %}
+
+{% block styles %}
+    <link rel="stylesheet" href="style/sign-up.css">
+{% endblock styles %}
+
+{% block content %}
+
+    {% include "partials/page-header.html" %}
+
+    <form action="/sign-up" method="POST">
+        <h1>We'd like to know you better!</h1>
+        <fieldset>
+            <legend>
+                <h2>Tell us your...</h2>
+            </legend>
+
+            
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required="required">
+                </div>
+
+                <div class="field">
+                    <label for="email">E-mail</label>
+                    <input type="email" placeholder="your.best_@email.com" name="image" required="required">
+                </div>
+
+                <div class="field">
+                    <label for="password">Ideal password</label>
+                    <input type="password" name="password" required="required">
+                </div>
+        </fieldset>
+
+        <button type="submit">Sign up</button>
+    </form>
+
+{% endblock content %}
+
+{# {% block modal %}
+    {% if saved %}
+        {% include "partials/point-created.html" %}
+    {% endif %}
+
+{% endblock modal %} #}
