@@ -1,0 +1,77 @@
+#page-initial{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#page-initial header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-top: 48px;
+ }
+ 
+ #page-initial header a{
+     font: bold;
+     display: flex;
+     align-items: center;
+     color: var(--dark-blue);
+ }
+
+ #page-initial header a:hover{
+    color: var(--light-blue);
+}
+
+#page-initial header a span{
+    margin-right: 16px;
+    background-image: url(../icons/log-in.svg);
+    display: flex;
+    width: 20px;
+    height: 24px;
+}
+
+#page-initial .page-content{
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.event-box{
+    display: flex;
+    justify-content: flex-start;
+    height: 12vh;
+    width: 600px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.events{
+    display: flex;
+    flex-direction: column;
+}
+
+.event-date{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid black;
+    background-color: var(--light-yellow); 
+}
+
+.event-info{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    flex-grow: 3;
+    background-color: #d8d8d8;
+}
+
+button{
+    margin-top: 5px;
+    width: 600px;
+}

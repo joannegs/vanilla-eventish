@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% set pageId = "page-initial" %}
+
+{% block name %}
+    <title>eventish</title>
+{% endblock name %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/style/initial.css">
+    <link rel="stylesheet" href="/style/modal.css">
+{% endblock styles %}
+
+    {% block content %}
+
+        {% include "partials/page-header.html" %}
+            <div id="teste" class="page-content">
+                {% include "partials/list-events.html" %}
+                <button id="add-event">Add an event</button>
+            </div>
+            
+    {% endblock content %}
+
+{% block modal %}
+    {% include "partials/modal.html" %}
+{% endblock modal %}
+    
+{% block scripts %}
+    <script src="/scripts/initial.js"></script>
+{% endblock scripts %}
