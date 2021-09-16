@@ -66,10 +66,8 @@
 
 #index-page main h1{
     font-size: 65px;
+    align-items: center;
 }
 
-#index-page main p{
-    font-size: 20px;
-}
 
 
