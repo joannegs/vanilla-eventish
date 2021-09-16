@@ -1,44 +1,37 @@
 {% extends "layout.html" %}
 {% set pageId = "page-sign-up" %}
-
 {% block name %}
     <title>sign up to eventish</title>
 {% endblock name %}
-
 {% block styles %}
-    <link rel="stylesheet" href="style/sign-up.css">
+    <link rel="stylesheet" href="/style/sign-up.css">
 {% endblock styles %}
-
 {% block content %}
-
-    {% include "partials/page-header.html" %}
-
-    <form action="/save-user" method="POST">
+        {% include "partials/page-header.html" %}
+        
+    <div class="form">
         <h1>We'd like to know you better!</h1>
         <fieldset>
             <legend>
                 <h2>Tell us your...</h2>
             </legend>
-
-            
-                <div class="field">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" required>
-                </div>
-
-                <div class="field">
-                    <label for="email">E-mail</label>
-                    <input type="text" placeholder="your.best_@email.com" name="email" required>
-                </div>
-
-                <div class="field">
-                    <label for="password">Ideal password</label>
-                    <input type="password" name="password" required>
-                </div>
+            <div class="field">
+                <label for="name">Name</label>
+                <input id="userName" type="text" name="name" required>
+            </div>
+            <div class="field">
+                <label for="email">E-mail</label>
+                <input id="userEmail" type="text" placeholder="your.best_@email.com" name="email" required>
+            </div>
+            <div class="field">
+                <label for="password">Ideal password</label>
+                <input id="userPassword" type="password" name="password" required>
+            </div>
         </fieldset>
-
-        <button type="submit">Sign up</button>
-    </form>
-
+        <button id="sign-up-button" type="submit">Sign up</button>
+    </div>
 {% endblock content %}
 
+{% block scripts %}
+    <script src="/scripts/sign-up.js"></script>
+{% endblock scripts %}
