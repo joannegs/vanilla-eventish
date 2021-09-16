@@ -30,7 +30,7 @@
     height: 24px;
 }
 
-form{
+.form{
 
     background-color: white;
     border-radius: 8px;
@@ -40,17 +40,17 @@ form{
     max-width: 650px;
 }
 
-form h1{
+.form h1{
     font-size: 30px;
 }
 
-form fieldset{
+.form fieldset{
     margin-top: 50px;
     border: 0;
 }
 
 
-form legend{
+.form legend{
     margin-bottom: 30px;
     display: flex;
     align-items: center;
@@ -59,11 +59,11 @@ form legend{
     
 }
 
-form legend h2{
+.form legend h2{
     font-size: 20px;
 }
 
-form .field{
+.form .field{
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -71,12 +71,12 @@ form .field{
     margin-bottom: 20px;
 }
 
-form .field-group{
+.form .field-group{
     display: flex;
 }
 
-form input,
-form select{
+.form input,
+.form select{
     background-color: #f0f0f5;
     border: 0;
 
@@ -88,29 +88,15 @@ form select{
     border-radius: 5px;
 }
 
-form label{
+.form label{
     font-size: 14px;
     margin-bottom: 8px;    
 }
 
-form select {
+.form select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
 
-form button {
-    width: 100%; 
-    border: none;
-    background: var(--yellow);
-    color: #fff;
-    border-radius: 5px;
-    margin: 40px 0;
-    font-size: 15px;
-    padding: 10px;
-    transition: 400ms;
-}
 
-form button:hover{
-    background: var(--darker-yellow);
-}

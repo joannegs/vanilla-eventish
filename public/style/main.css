@@ -1,9 +1,12 @@
 :root{
     --yellow: #FFC947;
     --darker-yellow: #FFB830;
+    --light-yellow: #ffe3a0;
     --dark-blue: #0A1931;
     --light-blue: #185ADB;
     --grey: #EFEFEF;
+    --darker-grey: #d8d8d8;
+    --grey-blue: #cecbfe;
 }
 
 *{
@@ -31,5 +34,20 @@ body{
     -webkit-font-smoothing: antialised;
 }
 
+button {
+    width: 100%; 
+    border: none;
+    background: var(--yellow);
+    color: #fff;
+    border-radius: 5px;
+    margin: 40px 0;
+    font-size: 15px;
+    padding: 10px;
+    transition: 400ms;
+}
+
+button:hover{
+    background: var(--darker-yellow);
+}
 
 
