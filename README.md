@@ -21,7 +21,12 @@
 ## Future features
 - [ ] Shared events
   
-
+## Usage
+To run eventish, first install its dependencies and then start the server.
+```
+npm install
+npm start
+```
 ## Tech Stack
 
 The project is using the following tools:
